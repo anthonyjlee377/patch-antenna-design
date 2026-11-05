@@ -1,5 +1,3 @@
-# antenna-design-project
-
 # 10 GHz Patch Antenna
 
 ## 1. Overview
