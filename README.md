@@ -1,7 +1,7 @@
 # 10 GHz Patch Antenna
 
 ## 1. Overview
-
+![CST Model](images/CST_model.png)
 First antenna design intended to operate at 10GHz, built as a course project for Antenna Engineering (Yonsei University, EEE4140). 
 
 - Learned the general flow of antenna design, fabrication, and measurement.
@@ -25,10 +25,24 @@ First antenna design intended to operate at 10GHz, built as a course project for
 A MATLAB skeleton script for the EAGLE script exportwas provided by Prof. Insang Yoo as part of the course.
 Fabrication files were generated with Autodesk EAGLE.
 
-## 3. VNA Measurement Results
+![S-Parameter Magnitude](images/(75)%203.139%202.75%200.2%206.7.png)
+
+![Input Impedance - Smith Chart](images/(75)%20smith%20chart.png)
+
+![Radiation Pattern at 10 GHz](images/(75)%20farfield.png)
+
+![Radiation Efficiency](images/(75)%20radiation%20efficiency.png)
+
+![Total Efficiency](images/(75)%20total%20efficiency.png)
+
+
+
+## 3. Fabrication and VNA Measurement Results
+
+![Fabricated Patch Antenna](images/Antenita.jpg)
 
 The raw S11 measurement showed severe ripples between 8 and 12 GHz, with a minimum value of -23.4 dB at 11.46 GHz. These ripples were attributed to calibration and connector mismatches.
-
+![Original S11 Measurement with Ripples](images/Figure_1.png)
 Band-limited time-domain gating was applied to remove the delayed reflections:
 
 ```matlab
@@ -113,7 +127,7 @@ text(min_freq, S11_min_dB, sprintf('  %.2f dB @ %.2f GHz', S11_min_dB, min_freq)
 
 Ripples were substantially reduced. The minimum S11 after gating was -20.65 dB at 11.46 GHz. However, the S11 value at 10GHz worsened to above -8 dB after gating, indicating a shift in the antenna's effective operating frequency.
 
-
+![Original S11 Measurement with Ripples](images/Figure_3 v2.png)
 
 
 
