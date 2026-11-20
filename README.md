@@ -127,7 +127,7 @@ text(min_freq, S11_min_dB, sprintf('  %.2f dB @ %.2f GHz', S11_min_dB, min_freq)
 
 Ripples were substantially reduced. The minimum S11 after gating was -20.65 dB at 11.46 GHz. However, the S11 value at 10GHz worsened to above -8 dB after gating, indicating a shift in the antenna's effective operating frequency.
 
-![S11 after time-domain gating](images/Figure_3 v2.png)
+![S11 after time-domain gating](images/Figure_3%20v2.png)
 
 
 
